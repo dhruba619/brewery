@@ -1,0 +1,418 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+	<title>HopStop</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="images/marker.png">
+	<link rel="stylesheet" href="css/hopstop-assets.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Container -->
+<div id="container">
+<!-- Header -->
+<header class="clearfix">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="">
+				</a>
+				<button class="navbar-toggler" href="index.html" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto right-list">
+						<!-- Ashley's pages linked here -->
+						<li><a href="sign-page.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Sign In</a></li>
+						<li><a href="sign-page.html"><i class="fa fa-user-o" aria-hidden="true"></i>Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+<!-- End Header -->
+
+<!-- discover-module section -->
+<section class="discover">
+	<div class="container">
+		<p class="discover__description">
+			Find out perfect places to hangout in your city.
+		</p>
+		<h1 class="discover__title places-tab">
+			Discover local breweries
+		</h1>
+
+		<!-- by default discover__title events tab is hidden -->
+		<h1 class="discover__title events-tab">
+			Independent Craft Breweries
+		</h1>
+
+		<ul class="discover__list">
+			<li class="discover__list-item">
+				<a class="place active-list" href="#"><i class="la la-compass" aria-hidden="true"></i>Breweries</a>
+			</li>
+			<li class="discover__list-item">
+				<a class="events" href="#"><i class="la la-compass" aria-hidden="true"></i>Certified Craft</a>
+			</li>
+		</ul>
+		<form class="discover__form">
+			<div class="row justify-content-md-center">
+				<input class="discover__form-input" type="text" name="place-event" id="place-event" placeholder="Zip Code" />
+					<select class="discover__form-input js-example-basic-multiple">
+						<option>Radius</option>
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>75</option>
+						<option>100</option>
+					</select>
+				<a class="btn-default btn-default-red" href="explore-sidebar-map.html">
+					<i class="fa fa-search" aria-hidden="true"></i>
+						Search
+				</a>
+				<button id="displayMap"></button>
+			</div>
+		</form>
+	</div>
+</section>
+<!-- End discover-module section -->
+	
+<!-- top-experience-block -->
+<section class="top-experience">
+	<div class="container">
+
+		<!-- section-header module -->
+		<div class="section-header">
+			<h1 class="section-header__title white-style">
+				Some Breweries suggestions for you
+			</h1>
+			<p class="section-header__description">
+				Based on your location consider these awesome breweries.
+			</p>
+		</div>
+		<!-- end section-header module -->
+
+		<div class="top-experience__box owl-wrapper">
+			<div class="owl-carousel" data-num="3">
+
+				<div class="item">
+
+					<!-- place-gal module -->
+					<div class="place-gal">
+						<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
+						<div class="place-gal__content">
+							<h2 class="place-gal__title">
+								<a href="#">
+									<!-- <img src="upload/flag1.jpg" alt=""> -->
+									Brewery Name
+								</a>
+							</h2>
+							<a class="btn-default" href="#">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								About
+							</a>
+						</div>
+					</div>
+					<!-- end place-gal module -->
+
+				</div>
+
+				<div class="item">
+
+					<!-- place-gal module -->
+					<div class="place-gal">
+						<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
+						<div class="place-gal__content">
+							<h2 class="place-gal__title">
+								<a href="#">
+									Brewery Name
+								</a>
+							</h2>
+							<a class="btn-default" href="#">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								About Us
+							</a>
+						</div>
+					</div>
+					<!-- end place-gal module -->
+
+				</div>
+
+				<div class="item">
+
+					<!-- place-gal module -->
+					<div class="place-gal">
+						<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
+						<div class="place-gal__content">
+							<h2 class="place-gal__title">
+								<a href="#">
+									Brewery Name
+								</a>
+							</h2>
+							<a class="btn-default" href="#">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								About
+							</a>
+						</div>
+					</div>
+					<!-- end place-gal module -->
+
+				</div>
+
+				<div class="item">
+
+					<!-- place-gal module -->
+					<div class="place-gal">
+						<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
+						<div class="place-gal__content">
+							<h2 class="place-gal__title">
+								<a href="#">
+									Brewery Name
+								</a>
+							</h2>
+							<a class="btn-default" href="#">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								About
+							</a>
+						</div>
+					</div>
+					<!-- end place-gal module -->
+
+				</div>
+
+				<div class="item">
+
+					<!-- place-gal module -->
+					<div class="place-gal">
+						<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
+						<div class="place-gal__content">
+							<h2 class="place-gal__title">
+								<a href="#">
+									Brewery Name
+								</a>
+							</h2>
+							<a class="btn-default" href="#">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								About
+							</a>
+						</div>
+					</div>
+					<!-- end place-gal module -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End top-experience-block -->
+
+<!-- banner-block -->
+<section class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+
+				<!-- section-header module -->
+				<div class="section-header">
+					<h1 class="section-header__title white-style">
+						Join Our Awesome Community
+					</h1>
+					<p class="section-header__description white-style">
+						"Beer is proof God loves us and wants us to be happy" - Benjamin Franklin
+					</p>
+				</div>
+				<!-- end section-header module -->
+
+			</div>
+			<div class="col-md-4">
+				<a class="btn-default-red" href="#">
+					<i class="" aria-hidden="true"></i>
+					Register Now
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End banner-block -->
+
+<!-- how-it-work-block -->
+<section class="how-it-work">
+	<div class="container">
+
+		<!-- section-header module -->
+		<div class="section-header">
+			<h1 class="section-header__title white-style">
+				How It Works
+			</h1>
+			<p class="section-header__description white-style">
+				Explore some of the best breweries around you.
+			</p>
+		</div>
+		<!-- end section-header module -->
+
+		<div class="how-it-work__box">
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+
+					<!-- how-work-post module -->
+					<div class="how-work-post">
+
+						<span class="how-work-post__icon">
+							<i class="la la-compass" aria-hidden="true"></i>
+						</span>
+
+						<h2 class="how-work-post__title how-work-post__title-white">
+							HopStop Suggestions
+						</h2>
+
+						<p class="how-work-post__description how-work-post__description-white">
+							Not sure where to begin? HopStop automatically suggests breweries based on your location.
+						</p>
+
+					</div>
+					<!-- end how-work-post module -->
+
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+
+					<!-- how-work-post module -->
+					<div class="how-work-post">
+
+						<span class="how-work-post__icon">
+							<i class="la la-binoculars" aria-hidden="true"></i>
+						</span>
+
+						<h2 class="how-work-post__title how-work-post__title-white">
+							Search
+						</h2>
+
+						<p class="how-work-post__description how-work-post__description-white">
+							HopStop will help you find breweries. 
+						</p>
+
+					</div>
+					<!-- end how-work-post module -->
+
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+
+					<!-- how-work-post module -->
+					<div class="how-work-post">
+
+						<span class="how-work-post__icon">
+							<i class="la la-plus-circle" aria-hidden="true"></i>
+						</span>
+
+						<h2 class="how-work-post__title how-work-post__title-white">
+							Add Your Favorite Breweries
+						</h2>
+
+						<p class="how-work-post__description how-work-post__description-white">
+							Create an account and log your breweries, add to your favorites and rate them. 
+						</p>
+
+					</div>
+					<!-- end how-work-post module -->
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- End how-it-work-block -->
+
+<!-- footer block module -->
+<footer class="footer">
+	<div class="container">
+
+		<div class="footer__up-part">
+			<div class="row">
+				<div class="col-md-4">
+
+					<div class="footer__widget text-widget">
+						<img src="images/logo-black.png" alt="triptip-logo">
+						<p class="footer__widget-description">
+							 HopStop was created as a Penn Coding Bootcamp assignment. 
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+
+					<div class="footer__widget subscribe-widget">
+						<h2 class="footer__widget-title">
+							Certified Independent Craft Breweries
+						</h2>
+						<p class="footer__widget-description">
+							The Brewers Association has provided the Independent Craft Brewer Seal to denote breweries that are Certified Independent Craft. Looks for this seal to identify them. 
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<a class="btn-default btn-default-red" href="about.html">
+						<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+							About Us
+					</a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__down-part">
+			<div class="row">
+				<div class="col-md-7">
+					<p class="footer__copyright">
+						© Copyright 2019 - All Rights Reserved
+					</p>
+				</div>
+				<div class="col-md-5">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</footer>
+<!-- End footer -->
+
+</div>
+<!-- End Container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.migrate.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
+<!--build:js js/triptip-plugins.min.js -->
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.imagesloaded.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/infobox.min.js"></script>
+<script src="js/markerclusterer.js"></script>
+<script src="js/maps.js"></script>
+<!-- endbuild -->
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

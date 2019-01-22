@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+	<head>
+		<title>HopStop</title>
+	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="icon" href="images/marker.png">
+		<link rel="stylesheet" href="css/hopstop-assets.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+<body>
+
+	<!-- Container -->
+	<div id="container">
+		<!-- Header -->
+		<header class="clearfix white-header-style fullwidth-with-search">
+	
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+	
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo-black.png" alt="">
+					</a>
+	
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+	
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<form class="search-form">
+							<div class="search-form__input-holders">
+								<input class="search-form__input" type="text" name="search-event" placeholder="ZipCode" />
+							</div>
+							<a class="btn-default btn-default-red" href="explore-sidebar-map.html">
+								<i class="fa fa-search" aria-hidden="true"></i>
+									Search
+							</a>
+						</form>
+						<ul class="navbar-nav ml-auto right-list">
+							<li><a href="sign-page.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
+							<li><a href="sign-page.html"><i class="fa fa-user-o" aria-hidden="true"></i> Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header -->
+
+		<!-- explore-module -->
+		<section class="explore">
+			<div class="explore__side-content">
+
+				<div class="explore__filter explore__filter-side">
+					<form class="explore__form">
+						<h2 class="explore__filter-title">
+							<span>Results For:</span> Zip Code <!-- To be replaced by an id with Zip Code user for search -->
+						</h2>
+				<div class="explore__box explore__box-side">
+
+					<div class="explore__wrap iso-call">
+
+						<div class="item">
+
+							<!-- place-post module -->
+							<div class="place-post">
+								<div class="place-post__gal-box">
+									<img class="place-post__image" src="upload/1.jpg" alt="place-image">
+									<a class="place-post__like" href="#"><i aria-hidden="true"></i></a>
+								</div>
+								<div class="place-post__content">
+									<h2 class="place-post__title">
+										<a href="listing-detail-large.html">Result x</a> <!-- id for result 1 Brewery Name -->
+									</h2>
+									<p class="place-post__address">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										Address for result x <!-- id for result 1 Brewery address -->
+									</p>
+								</div>
+							</div>
+							<!-- end place-post module -->
+							
+						</div>	
+
+						<div class="item">
+
+								<!-- place-post module -->
+								<div class="place-post">
+									<div class="place-post__gal-box">
+										<img class="place-post__image" src="upload/1.jpg" alt="place-image">
+										<a class="place-post__like" href="#"><i aria-hidden="true"></i></a>
+									</div>
+									<div class="place-post__content">
+										<h2 class="place-post__title">
+											<a href="listing-detail-large.html">Result x+1</a> <!-- id for result 2 Brewery Name -->
+										</h2>
+										<p class="place-post__address">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+											Address for result x+1 <!-- id for result 1 Brewery address -->
+										</p>
+									</div>
+								</div>
+								<!-- end place-post module -->
+								
+							</div>	
+							
+						</div>
+
+					</div>
+					<div class="center-button">
+						<a class="btn-default btn-default-red load-post-container" 
+							data-load="load-container.html"  
+							data-number="2" 
+							href="#">
+							<i class="fa fa-refresh"></i>
+							Load More Listing
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="explore__map-side">
+				<!-- map block -->
+				<div id="map" data-map-zoom="9">
+					<p>MAP HERE YOOOO</p>
+				</div>
+				<!-- End map block -->
+			</div>	
+
+		</section>
+		<!-- End explore-module -->
+
+	</div>
+	<!-- End Container -->
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.migrate.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
+	<!--build:js js/triptip-plugins.min.js -->
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/jquery.imagesloaded.min.js"></script>
+  	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/retina-1.1.0.min.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/infobox.min.js"></script>
+	<script src="js/markerclusterer.js"></script>
+	<script src="js/maps.js"></script>
+	<!-- endbuild -->
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+
+
+<html lang="en" class="no-js">
+	<head>
+		<title>HopStop</title>
+	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="icon" href="images/marker.png">
+		<link rel="stylesheet" href="css/hopstop-assets.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+<body>
+
+<!-- Container -->
+<div id="container">
+	<header class="clearfix white-header-style fullwidth-with-search">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo-black.png" alt="">
+				</a>
+				<ul class="navbar-nav ml-auto right-list">
+					<li><a href="sign-page.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
+					<li><a href="sign-page.html"><i class="fa fa-user-o" aria-hidden="true"></i> Register</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+</header>
+<!-- End Header -->
+
+		<!-- listing-detail -->
+		<section class="listing-detail">
+			<div class="listing-detail__gal">
+				<div class="listing-detail__title-box">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-9">
+								<h1 class="listing-detail__title listing-detail__title-black">
+									<span>Brewery Name</span> <!-- To be replaced with id with brewery name -->
+								</h1>
+								<p class="listing-detail__address">
+									<i class="fa fa-map-marker"></i>Brewery Address <!-- To be replaced with id with brewery address -->
+								</p>
+							</div>
+							<div class="col-sm-3">
+								<div class="listing-detail__buttons listing-detail__buttons-icons">
+									<a class="btn-default" href="#">
+										<i class="la la-heart-o" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="listing-detail__content">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="listing-detail__content-box listing-detail__content-box-nopadding">
+
+								<div class="listing-detail__scroll-menu-box scroller-menu">
+									<ul class="listing-detail__scroll-menu listing-detail__menu-top-border navigate-section">
+										<li>
+											<a class="active" href="#overview-box">Overview</a>
+										</li>
+									</ul>
+								</div>
+
+								<!-- overview box -->
+								<div class="listing-detail__galleria">
+									<div class="item-image">
+										<img src="upload/single-medium.jpg" alt=""> <!-- To be replaced with id with brewery logo -->
+									</div>
+								</div>
+
+								<!-- overview box -->
+								<div class="listing-detail__overview element-waypoint" id="overview-box">
+									<h2 class="listing-detail__content-title">Overview</h2>
+									<p class="listing-detail__content-description">
+										<!-- Load /breweries description, website,  -->
+									</p>
+								</div>
+
+								<!-- tips & reviews-box -->
+								<div class="listing-detail__reviews element-waypoint" id="tips-reviews-box">
+
+								</div>
+
+								<!-- gallery-box -->
+								<div class="listing-detail__photos element-waypoint" id="photos-box">
+									
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="sidebar">
+
+								<div class="sidebar__map-widget">
+									<h2 class="sidebar__widget-title">
+										Location
+									</h2>
+									<div id="mapSingle" data-latitude="" data-longitude="" data-map-icon="la la-cutlery"></div>
+								</div>
+
+								<div class="sidebar__widget sidebar__widget-listing-details">
+									<h2 class="sidebar__widget-title">
+										Details
+									</h2>
+									<ul class="sidebar__listing-list">
+										<li>
+											<i class="la la-map-marker"></i>
+											<!-- To be replaced with id with brewery address -->
+										</li>
+										<li>
+											<i class="la la-mobile-phone"></i>
+											<!-- To be replaced with id with brewery phone -->
+										</li>
+										<li>
+											<i class="la la-link"></i>
+											<!-- To be replaced with id with brewery website -->
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- End listing-detail -->
+
+		<!-- footer block module
+			================================================== -->
+			<footer class="footer footer-black">
+					<div class="container">
+		
+						<div class="footer__up-part">
+							<div class="row">
+								<div class="col-md-4">
+		
+									<div class="footer__widget text-widget">
+										<img src="images/logo.png" alt="triptip-logo">
+										<p class="footer__widget-description">
+											Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. 
+										</p>
+									</div>
+		
+								</div>
+							</div>
+						</div>
+		
+						<div class="footer__down-part footer__down-part-black">
+							<div class="row">
+								<div class="col-md-7">
+									<p class="footer__copyright">
+										© Copyright 2018 - All Rights Reserved
+									</p>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+		
+				</footer>
+				<!-- End footer -->
+
+	</div>
+	<!-- End Container -->
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.migrate.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
+	<!--build:js js/triptip-plugins.min.js -->
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/jquery.imagesloaded.min.js"></script>
+  	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/retina-1.1.0.min.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/infobox.min.js"></script>
+	<script src="js/markerclusterer.js"></script>
+	<script src="js/maps.js"></script>
+	<!-- endbuild -->
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
